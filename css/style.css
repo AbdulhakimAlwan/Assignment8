@@ -1,0 +1,99 @@
+body {
+    background-color: #f7ecde;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+}
+
+.h2-with-line {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.h2-with-line::after {
+    content: '';
+    display: block;
+    width: 26%;
+    height: 1.5rem;
+    background-color: #FEC260;
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: 0.2s ease-in-out;
+}
+
+.h2-with-line:hover::after {
+    height: 2.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.text-color {
+    font-size: 2rem;
+    font-family: 'Righteous', sans-serif;
+}
+
+.text-color span,
+.text-color .fa-solid {
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+}
+
+.text span {
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+.dot-board {
+    border-top: 0.15rem dotted #000;
+    border-bottom: 0.15rem dotted #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn-custome {
+    border: none;
+    padding: 0.6rem 2.5rem;
+    background-color: #d1512d;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-custome:hover {
+    background-color: #a03315;
+}
+
+.visit-button {
+    padding: 5px 10px;
+    background-color: #9eb23b;
+    color: white;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.visit-button:hover {
+    background-color: #6e8018;
+}
+
+.delete-button {
+    background-color: #eb1d36;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+    background-color: #ba081d;
+}
